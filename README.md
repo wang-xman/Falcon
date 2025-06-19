@@ -97,7 +97,8 @@ On the FALCON-H8 I used for testing, there are 4 HAILO chips, indexed from 0 to 
 (venv_falcon)$ python3 example.py --input_device camera --camera_index 2 --hailo_device 1 --network_path ./yolov7.hef
 ```
 You may launch other pipelines using different camera indices, Hailo devices,
-and neural networks.
+and neural networks. The compiled `yolov7.hef` file can be found at
+[here](https://hailo-model-zoo.s3.eu-west-2.amazonaws.com/ModelZoo/Compiled/v2.12.0/hailo8/yolov7.hef).
 
 ## Run inference on video clip
 
@@ -107,3 +108,4 @@ actually irrelevant
 ```
 (venv_falcon)$ python3 example.py --input_device walkers.mp4 --camera_index 0 --hailo_device 1 --network_path ./yolov8m.hef --batch_size 1
 ```
+The `yolov8m.hef` is attached in this repo.
